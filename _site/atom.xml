@@ -4,13 +4,80 @@
  <title>notes.nonamenix@angara</title>
  <link href="http://nonamenix.github.io/" rel="self"/>
  <link href="http://nonamenix.github.io"/>
- <updated>2014-06-23T00:43:46+04:00</updated>
+ <updated>2014-06-23T01:33:36+04:00</updated>
  <id>http://nonamenix.github.io</id>
  <author>
    <name>Danil Ivanov</name>
    <email>nonamenix@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Coffeescript Zip Function</title>
+   <link href="http://nonamenix.github.io/coffeescript/2014/02/16/coffeescript-zip-function"/>
+   <updated>2014-02-16T00:00:00+04:00</updated>
+   <id>http://nonamenix.github.io/coffeescript/2014/02/16/coffeescript-zip-function</id>
+   <content type="html">&lt;p&gt;В Python есть отличная функция для создания словарей: zip
+При помощи этой функции можно создать словарь из картажа пар элементов. До появления версии 2.7 это была основная возможность реализовать dict comprehension.&lt;/p&gt;
+
+&lt;p&gt;В CoffeeScript не оказалось dict comprehension так что в файлик utils попадает функция zip:&lt;/p&gt;
+
+&lt;!-- language: lang-coffeescript --&gt;
+
+&lt;pre&gt;&lt;code&gt;zip = (pairs) -&amp;gt;
+  dict = {}
+  dict[key] = value for [key, value] in pairs
+  dict
+
+# Example
+zip ([el, el * el] for el in [4..8]) # {4:16, 5:25, 6:36, 7:49, 8:64}
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Удаление всех *.pyc файлов</title>
+   <link href="http://nonamenix.github.io/2014/01/21/delete-all-pyc-files"/>
+   <updated>2014-01-21T00:00:00+04:00</updated>
+   <id>http://nonamenix.github.io/2014/01/21/delete-all-pyc-files</id>
+   <content type="html">&lt;p&gt;Команда для удаления все скомпилированных в байт код pyc файлы в Linux:&lt;/p&gt;
+
+&lt;!--language: lang-bash --&gt;
+&lt;pre&gt;&lt;code&gt;find . -name &quot;*.pyc&quot; -exec rm -rf {} \;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Установка Sublime Text Editor 2 в Ubuntu</title>
+   <link href="http://nonamenix.github.io/howto/2014/01/11/music-service-in-web-console"/>
+   <updated>2014-01-11T00:00:00+04:00</updated>
+   <id>http://nonamenix.github.io/howto/2014/01/11/music-service-in-web-console</id>
+   <content type="html">
+&lt;p&gt;Прикольная идея по реализации радио в консоле.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/media/images/cmd.png.1280x1280_q85.jpg&quot; alt=&quot;Web console player&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Музыкальный сервис в веб консоле&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Установка Sublime Text Editor 2 в Ubuntu</title>
+   <link href="http://nonamenix.github.io/howto/2014/01/11/install-sublime-text-editor-2-in-ubuntu"/>
+   <updated>2014-01-11T00:00:00+04:00</updated>
+   <id>http://nonamenix.github.io/howto/2014/01/11/install-sublime-text-editor-2-in-ubuntu</id>
+   <content type="html">&lt;p&gt;Для установки необходимо добавить репозиторий webupd8team/sublime-text2, обновить пакеты и установить редактор:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;sudo add-apt-repository ppa:webupd8team/sublime-text-2
+sudo apt-get update
+sudo apt-get install sublime-text&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Для того чтобы редактор стал более удобным и приобрел необходимый функционал необходимо подключить репозиторий пакетов. Вызываем консоль Ctrl+` и вставляем код&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;Package Control.sublime-package&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ipp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sublime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;installed_packages_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;makedirs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ipp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ipp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;install_opener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urllib2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build_opener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urllib2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ProxyHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()));&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ipp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;wb&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urllib2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;http://sublime.wbond.net/&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;%20&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;Перезапустите Sublime Text для окончания установки&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Jekyll Introduction</title>

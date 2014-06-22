@@ -8,4 +8,8 @@ http://nonamenix.github.io/rss.xml
 http://nonamenix.github.io/sitemap.txt
 http://nonamenix.github.io/tags.html
 
+http://nonamenix.github.io/coffeescript/2014/02/16/coffeescript-zip-function
+http://nonamenix.github.io/2014/01/21/delete-all-pyc-files
+http://nonamenix.github.io/howto/2014/01/11/music-service-in-web-console
+http://nonamenix.github.io/howto/2014/01/11/install-sublime-text-editor-2-in-ubuntu
 http://nonamenix.github.io/lessons/2011/12/29/jekyll-introduction
