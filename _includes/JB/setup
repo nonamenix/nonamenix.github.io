@@ -17,6 +17,15 @@
       {% assign ASSET_PATH = site.JB.ASSET_PATH %}
     {% else %}
       {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ page.theme.name }}{% endcapture %}
-    {% endif %}  
+    {% endif %}
+
+    {% if site.JB.MEDIA_PATH %}
+      {% assign MEDIA_PATH = site.JB.MEDIA_PATH %}
+    {% endif %}
+
+    {% if site.JB.IMAGES_PATH %}
+      {% assign IMAGES_PATH = site.JB.IMAGES_PATH %}
+    {% endif %}
+
   {% endif %}
 {% endcapture %}{% assign jbcache = nil %}
