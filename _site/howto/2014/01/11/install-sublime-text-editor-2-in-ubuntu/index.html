@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Установка Sublime Text Editor 2 в Ubuntu</title>
+    
+    <meta name="author" content="Danil Ivanov">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap styles -->
+    <link href='http://nonamenix.ru/static/css/bootstrap.min.css' rel='stylesheet'/>
+    <link href='/assets/themes/sandbox/css/styles.css' rel='stylesheet'/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700&subset=latin,cyrillic-ext'
+          rel='stylesheet' type='text/css'/>
+
+    <!-- Custom styles -->
+    <!--<link href="/assets/themes/sandbox/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/assets/themes/sandbox/images/favicon.ico">
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate"
+          title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate"
+          title="Sitewide RSS Feed">
+
+</head>
+
+<body>
+<div class="sticky-wrap">
+    <header class='navbar navbar-default main-top-nav' role='banner'>
+        <div class='container'>
+            <div class='navbar-header'>
+                <button class='navbar-toggle' data-target='.bs-navbar-collapse' data-toggle='collapse' type='button'>
+                    <span class='sr-only'>
+                        Toggle navigation
+                    </span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+                <a class='navbar-brand' href='/'>
+                    notes.nonamenix@angara
+                </a>
+            </div>
+            <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
+                <ul class='nav navbar-nav pull-right'>
+                    
+                    
+                    
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        
+<div class="page-header">
+  <h1>Установка Sublime Text Editor 2 в Ubuntu </h1>
+</div>
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="date">
+      <span>11 January 2014</span>
+    </div>
+    <div class="content">
+      <p>Для установки необходимо добавить репозиторий webupd8team/sublime-text2, обновить пакеты и установить редактор:</p>
+
+<div class="highlight"><pre><code class="bash">sudo add-apt-repository ppa:webupd8team/sublime-text-2
+sudo apt-get update
+sudo apt-get install sublime-text</code></pre></div>
+
+<p>Для того чтобы редактор стал более удобным и приобрел необходимый функционал необходимо подключить репозиторий пакетов. Вызываем консоль Ctrl+` и вставляем код</p>
+
+<div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">urllib2</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span> <span class="n">pf</span><span class="o">=</span><span class="s">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span> <span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span> <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="bp">None</span><span class="p">;</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">install_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">ProxyHandler</span><span class="p">()));</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="s">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">&#39;http://sublime.wbond.net/&#39;</span><span class="o">+</span><span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">,</span><span class="s">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">());</span> <span class="k">print</span><span class="p">(</span><span class="s">&#39;Перезапустите Sublime Text для окончания установки&#39;</span><span class="p">)</span></code></pre></div>
+
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#howto-ref">
+    		howto <span>2</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#howto-ref">howto <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#sublime-ref">sublime <span>2</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  
+    <hr>
+    <ul class="pagination">
+    
+      <li class="prev"><a href="/lessons/2011/12/29/jekyll-introduction" title="Jekyll Introduction">&laquo; Previous</a></li>
+    
+      <li><a href="/archive.html">Archive</a></li>
+    
+      <li class="next"><a href="/howto/2014/01/11/music-service-in-web-console" title="Установка Sublime Text Editor 2 в Ubuntu">Next &raquo;</a></li>
+    
+    </ul>
+    <hr>
+    
+  </div>
+</div>
+
+
+    </div>
+    <div class="sticky-push"></div>
+</div>
+
+<!--<footer class="sticky-footer">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-12 col-lg-12 text-center">-->
+                <!--<div style="display:inline-block">-->
+                    <!--<a target="_blank" class="circ-wrap" href="http://vk.com/nonamenix"><i class="icon-vk icon-2x"></i></a>-->
+                    <!--<a target="_blank" class="circ-wrap" href="http://facebook.com/nonamenix"><i-->
+                            <!--class="icon-facebook icon-2x"></i></a>-->
+                    <!--<a target="_blank" class="circ-wrap"-->
+                       <!--href="http://ru.linkedin.com/pub/%D0%B4%D0%B0%D0%BD%D0%B8%D0%BB-%D0%B8%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2/66/623/b01"><i-->
+                            <!--class="icon-linkedin icon-2x"></i></a>-->
+                    <!--<a target="_blank" class="circ-wrap" href="https://plus.google.com/114178355542262453368/posts"><i-->
+                            <!--class="icon-google-plus icon-2x"></i></a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</footer>-->
+
+
+
+<!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/assets/themes/sandbox/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+

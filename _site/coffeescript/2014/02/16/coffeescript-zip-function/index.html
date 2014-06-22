@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Coffeescript Zip Function</title>
+    
+    <meta name="author" content="Danil Ivanov">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap styles -->
+    <link href='http://nonamenix.ru/static/css/bootstrap.min.css' rel='stylesheet'/>
+    <link href='/assets/themes/sandbox/css/styles.css' rel='stylesheet'/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700&subset=latin,cyrillic-ext'
+          rel='stylesheet' type='text/css'/>
+
+    <!-- Custom styles -->
+    <!--<link href="/assets/themes/sandbox/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/assets/themes/sandbox/images/favicon.ico">
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate"
+          title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate"
+          title="Sitewide RSS Feed">
+
+</head>
+
+<body>
+<div class="sticky-wrap">
+    <header class='navbar navbar-default main-top-nav' role='banner'>
+        <div class='container'>
+            <div class='navbar-header'>
+                <button class='navbar-toggle' data-target='.bs-navbar-collapse' data-toggle='collapse' type='button'>
+                    <span class='sr-only'>
+                        Toggle navigation
+                    </span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+                <a class='navbar-brand' href='/'>
+                    notes.nonamenix@angara
+                </a>
+            </div>
+            <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
+                <ul class='nav navbar-nav pull-right'>
+                    
+                    
+                    
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        
+<div class="page-header">
+  <h1>Coffeescript Zip Function <small>for dict comprehension</small></h1>
+</div>
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="date">
+      <span>16 February 2014</span>
+    </div>
+    <div class="content">
+      <p>В Python есть отличная функция для создания словарей: zip
+При помощи этой функции можно создать словарь из картажа пар элементов. До появления версии 2.7 это была основная возможность реализовать dict comprehension.</p>
+
+<p>В CoffeeScript не оказалось dict comprehension так что в файлик utils попадает функция zip:</p>
+
+<!-- language: lang-coffeescript -->
+
+<pre><code>zip = (pairs) -&gt;
+  dict = {}
+  dict[key] = value for [key, value] in pairs
+  dict
+
+# Example
+zip ([el, el * el] for el in [4..8]) # {4:16, 5:25, 6:36, 7:49, 8:64}
+</code></pre>
+
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#coffeescript-ref">
+    		coffeescript <span>1</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#zip-ref">zip <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#coffeescript-ref">coffeescript <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  
+    <hr>
+    <ul class="pagination">
+    
+      <li class="prev"><a href="/2014/01/21/delete-all-pyc-files" title="Удаление всех *.pyc файлов">&laquo; Previous</a></li>
+    
+      <li><a href="/archive.html">Archive</a></li>
+    
+      <li class="next disabled"><a>Next &rarr;</a>
+    
+    </ul>
+    <hr>
+    
+  </div>
+</div>
+
+
+    </div>
+    <div class="sticky-push"></div>
+</div>
+
+<!--<footer class="sticky-footer">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-12 col-lg-12 text-center">-->
+                <!--<div style="display:inline-block">-->
+                    <!--<a target="_blank" class="circ-wrap" href="http://vk.com/nonamenix"><i class="icon-vk icon-2x"></i></a>-->
+                    <!--<a target="_blank" class="circ-wrap" href="http://facebook.com/nonamenix"><i-->
+                            <!--class="icon-facebook icon-2x"></i></a>-->
+                    <!--<a target="_blank" class="circ-wrap"-->
+                       <!--href="http://ru.linkedin.com/pub/%D0%B4%D0%B0%D0%BD%D0%B8%D0%BB-%D0%B8%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2/66/623/b01"><i-->
+                            <!--class="icon-linkedin icon-2x"></i></a>-->
+                    <!--<a target="_blank" class="circ-wrap" href="https://plus.google.com/114178355542262453368/posts"><i-->
+                            <!--class="icon-google-plus icon-2x"></i></a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</footer>-->
+
+
+
+<!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/assets/themes/sandbox/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+
