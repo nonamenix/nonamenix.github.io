@@ -4,7 +4,7 @@
  <title>notes.nonamenix@angara</title>
  <link href="http://nonamenix.github.io/" rel="self"/>
  <link href="http://nonamenix.github.io"/>
- <updated>2014-06-23T01:57:40+04:00</updated>
+ <updated>2014-06-23T23:24:14+04:00</updated>
  <id>http://nonamenix.github.io</id>
  <author>
    <name>Danil Ivanov</name>
@@ -49,16 +49,16 @@ zip ([el, el * el] for el in [4..8]) # {4:16, 5:25, 6:36, 7:49, 8:64}
  </entry>
  
  <entry>
-   <title>Установка Sublime Text Editor 2 в Ubuntu</title>
-   <link href="http://nonamenix.github.io/howto/2014/01/11/music-service-in-web-console"/>
+   <title>Музыкальный сервис в веб консоле</title>
+   <link href="http://nonamenix.github.io/found-in-internet/2014/01/11/music-service-in-web-console"/>
    <updated>2014-01-11T00:00:00+04:00</updated>
-   <id>http://nonamenix.github.io/howto/2014/01/11/music-service-in-web-console</id>
+   <id>http://nonamenix.github.io/found-in-internet/2014/01/11/music-service-in-web-console</id>
    <content type="html">
-&lt;p&gt;Прикольная идея по реализации радио в консоле.&lt;/p&gt;
+&lt;p&gt;Забавная идея радио в консоле. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/media/images/cmd.png.1280x1280_q85.jpg&quot; alt=&quot;Web console player&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Сайт: &lt;a href=&quot;http://cmd.fm/&quot;&gt;http://cmd.fm&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Музыкальный сервис в веб консоле&lt;/p&gt;
+&lt;iframe height=&quot;600&quot; src=&quot;http://cmd.fm&quot; style=&quot;width:100%&quot;&gt;&lt;/iframe&gt;
 </content>
  </entry>
  

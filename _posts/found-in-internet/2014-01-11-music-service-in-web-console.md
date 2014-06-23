@@ -1,14 +1,14 @@
 ---
 layout: post
-category : howto
-title: Установка Sublime Text Editor 2 в Ubuntu
+category : found-in-internet
+title: Музыкальный сервис в веб консоле
 
-tags : [howto, sublime]
+tags : [found]
 ---
 {% include JB/setup %}
 
-Прикольная идея по реализации радио в консоле.
+Забавная идея радио в консоле. 
 
-![Web console player]({{ IMAGES_PATH }}/cmd.png.1280x1280_q85.jpg)
+Сайт: <a href="http://cmd.fm/">http://cmd.fm</a>
 
-Музыкальный сервис в веб консоле
+<iframe height="600" src="http://cmd.fm" style="width:100%"></iframe>
