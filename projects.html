@@ -1,0 +1,15 @@
+---
+layout: default
+title: Проекты
+group: navigation
+---
+
+{% assign posts = site.categories["Проекты"] %}
+{% for post in posts %}
+	<ul>
+		<li>
+			{{ post.title }}
+		</li>
+	</ul>
+	
+{% endfor %}

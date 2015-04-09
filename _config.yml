@@ -18,7 +18,6 @@ author :
   email : nonamenix@gmail.com
   github : nonamenix
   twitter : nonamenix
-  feedburner : johndoefeedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -83,9 +82,9 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : false
+    provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : nonamenix
     livefyre :
       site_id : 123
     intensedebate :
@@ -103,7 +102,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-***'
+        tracking_id : 'UA-9306801-8'
     getclicky :
       site_id : 
     mixpanel :
@@ -131,3 +130,6 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+blog_url: /blog/
+paginate: 5
+paginate_path: "/blog/page:num/"

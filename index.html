@@ -1,14 +1,15 @@
 ---
 layout: index
-title: John Doe
-tagline: aka nickname
+title: Встречная
+heder-title: Персональный сайт Иванова Данила aka nonamenix 
+group: navigation
 ---
+
 {% include JB/setup %}
 
 
 <!-- Change the "about information" contained in /_includes/themes/bootstrap/index.html  -->
-
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 
     <!-- Blog Post Template on Index page -->
     <h2>

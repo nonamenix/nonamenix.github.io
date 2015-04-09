@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Linux :: Убить процесс по используемому порту'
+date: '2013-03-06T14:23:00.001+04:00'
+author: Данил Иванов
+tags:
+- ubuntu
+modified_time: '2014-01-15T00:00:32.318+04:00'
+blogger_id: tag:blogger.com,1999:blog-818473394352822470.post-7571093196560746268
+blogger_orig_url: http://notes.nonamenix.ru/2013/03/linux.html
+---
+
+<pre class="brush: bash"><br />sudo kill `lsof -t -i:8000`<br /></pre> lsof возвращает идентификатор процесса использующег порт #8000

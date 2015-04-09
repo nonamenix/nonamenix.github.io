@@ -55,8 +55,7 @@ color: #95be7d;
 
 code, pre {
 	font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
-	font-size:0.95em;
-	margin: 1em 0 1.5em 0;
+	font-size: 0.8em;
 }
 
 .highlight span
