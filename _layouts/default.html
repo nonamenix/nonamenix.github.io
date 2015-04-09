@@ -46,10 +46,21 @@ theme :
               
               {% assign url = page.url | remove: '/blog/'  %}
               {% if url != page.url %}
-                <li class="active"><a href="{{ BASE_PATH }}{{site.blog_url}}" class="active">Блокнот</a></li>
+                 {% assign notes_active = 'active' %}
               {% else %}
-                <li><a href="{{ BASE_PATH }}{{site.blog_url}}">Блокнот</a></li>
+                {% assign notes_active = '' %}
               {% endif %}
+              
+              <li class="dropdown {{notes_active}}">
+                <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle {{notes_active}}" data-toggle="dropdown">Блокнот <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{ site.blog_url }}">Записи</a></li>
+                    {% assign pages_list = site.pages %}
+                    {% assign group = 'blog_navigation' %}
+                    {% include JB/pages_list %}
+
+                </ul>
+            </li>
 
             </ul>
           </div>
