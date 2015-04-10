@@ -17,8 +17,9 @@ layout: default
     </div>
 
     {% unless page.categories == empty %}
+
     <br>
-    <h4>Categories</h4>
+    <h4>Категории</h4>
       <ul class="nav nav-pills">
 	      <!-- <li><i class="icon-folder-open"></i></li> -->
         {% assign categories_list = page.categories %}
@@ -35,7 +36,6 @@ layout: default
       </ul>
     {% endunless %}
 
-    <hr>
     
     <ul class="pagination">
       {% if page.previous %}
