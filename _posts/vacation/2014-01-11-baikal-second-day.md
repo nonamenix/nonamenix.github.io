@@ -14,7 +14,7 @@ blogger_orig_url: http://notes.nonamenix.ru/2014/01/blog-post_7492.html
 
 Во второй день мы выдвинулись на Ольхон — Шаманское сердце Байкала.
 
-{% img img-responsive http://1.bp.blogspot.com/-KqtU5K0kTwY/UtBxQnEhmFI/AAAAAAAAKKY/CvvQg0PjIgM/s1600/DSC_0255.jpg.1280x1280_q85.jpg %}
+<img src="http://1.bp.blogspot.com/-KqtU5K0kTwY/UtBxQnEhmFI/AAAAAAAAKKY/CvvQg0PjIgM/s1600/DSC_0255.jpg.1280x1280_q85.jpg" class="img-responsive">
 
 **HOW-TO** Для того чтобы добраться до Ольхона необходимо:
 
@@ -33,28 +33,28 @@ blogger_orig_url: http://notes.nonamenix.ru/2014/01/blog-post_7492.html
 
 Решили пойти на проверенное место где ранее уже стояли. Идти пришлось примерно километра 4, местами даже по пескам (После этого наконец-то прочел фантастический роман [Дюна](https://ru.wikipedia.org/wiki/%D0%94%D1%8E%D0%BD%D0%B0_(%D1%80%D0%BE%D0%BC%D0%B0%D0%BD)) от Фрэнка Герберта).
 
-{% img img-responsive http://3.bp.blogspot.com/-oxGm0gt_5RU/UtBxRWgKeuI/AAAAAAAAKKk/gyi2uGjpR68/s1600/theroad.jpg %}
+<img src="http://3.bp.blogspot.com/-oxGm0gt_5RU/UtBxRWgKeuI/AAAAAAAAKKk/gyi2uGjpR68/s1600/theroad.jpg" class="img-responsive">
 
 
 Посмотреть на <a href="https://mapsengine.google.com/map/edit?mid=zpeGhDbj7AdQ.kE8Bckg1ck7U">GoogleMaps</a>
 
-{% img img-responsive http://1.bp.blogspot.com/-LlmJJs0cHTM/UtBxQj6MAXI/AAAAAAAAKKQ/JnIkcWKbqMM/s1600/dsc_0203.jpg %}
+<img src="http://1.bp.blogspot.com/-LlmJJs0cHTM/UtBxQj6MAXI/AAAAAAAAKKQ/JnIkcWKbqMM/s1600/dsc_0203.jpg" class="img-responsive">
 
 ## Корова 
 
 В один из дней на этой дороге появилась коровка, впечатлившая некоторых из нас:
 
-{% img img-responsive http://3.bp.blogspot.com/-sSdGEFF2n4g/UtBxQod_jMI/AAAAAAAAKKM/2OCRis4vAGM/s1600/dsc_0197.jpg %}
+<img src="http://3.bp.blogspot.com/-sSdGEFF2n4g/UtBxQod_jMI/AAAAAAAAKKM/2OCRis4vAGM/s1600/dsc_0197.jpg" class="img-responsive">
 
 ## Дюны
 
 Вот по таким замечательным дюнам приходилось идти с рюкзаком в 40кг:
 
-{% img img-responsive http://3.bp.blogspot.com/-nHuDIZK0JdQ/UtBxRFGPKfI/AAAAAAAAKKU/mfJwzVBGLDE/s1600/dsc_0205.jpg %}
+<img src="http://3.bp.blogspot.com/-nHuDIZK0JdQ/UtBxRFGPKfI/AAAAAAAAKKU/mfJwzVBGLDE/s1600/dsc_0205.jpg" class="img-responsive">
 
 ## Стоянка
 
-{% img img-responsive http://3.bp.blogspot.com/-nGE0AxJa9tk/UtBxRN1tQeI/AAAAAAAAKKo/mfPqRzg6sNI/s1600/dsc_0294.jpg %}
+<img src="http://3.bp.blogspot.com/-nGE0AxJa9tk/UtBxRN1tQeI/AAAAAAAAKKo/mfPqRzg6sNI/s1600/dsc_0294.jpg" class="img-responsive">
 
 ## Полезные контакты:
 

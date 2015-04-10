@@ -14,7 +14,7 @@ blogger_orig_url: http://notes.nonamenix.ru/2014/01/blog-post_11.html
 
 Изначально мы планировали в первый же день приезда друзей выехать на Ольхон, однако из-за чудесной работы аэрофлота в шереметьево пришлось быстро изменять планы. Таким образом мы отправились в Листвянку и музей деревянного зодчетсва расположенный прямо под открытым небом.
 
-{% img img-responsive http://4.bp.blogspot.com/-9vO2-ogwp_E/UtBu-Ur4B9I/AAAAAAAAKIc/C-Amc09MUcY/s1600/dqe5dorlk20.jpg %}
+<img src="http://4.bp.blogspot.com/-9vO2-ogwp_E/UtBu-Ur4B9I/AAAAAAAAKIc/C-Amc09MUcY/s1600/dqe5dorlk20.jpg" class="img-responsive">
 
 <!--more-->
 
@@ -27,43 +27,43 @@ blogger_orig_url: http://notes.nonamenix.ru/2014/01/blog-post_11.html
 Дальше идет просто выборка из фотографий вот с <a href="http://vk.com/album208489_180653941">этого альбома</a>
 ## Тальцы
 
-{% img img-responsive http://2.bp.blogspot.com/-mFbAwT2f-gY/UtBu_jE8XbI/AAAAAAAAKI4/U69jStj1z7k/s1600/panorama003.jpg %}
+<img src="http://2.bp.blogspot.com/-mFbAwT2f-gY/UtBu_jE8XbI/AAAAAAAAKI4/U69jStj1z7k/s1600/panorama003.jpg" class="img-responsive">
 
 Это, наверное, один из немногих музеев, которые мне реально нравятся. Здесь можно гулять, заходить в дома, находить, а если понравится, то и покупать всякие безделушки. Мне особенно понравилось стрелять из лука, ходить на ходулях и качаться на качеляяяяях (и немного мата, ибо в сандалях было сдложно не сорваться, когда качать начинала Маша)
 
 ## Стрельба из лука
 
-{% img img-responsive http://2.bp.blogspot.com/-9vO2-ogwp_E/UtBu-Ur4B9I/AAAAAAAAKIo/TDKNs3Jcka4/s1600/dqe5dorlk20.jpg %}
+<img src="http://2.bp.blogspot.com/-9vO2-ogwp_E/UtBu-Ur4B9I/AAAAAAAAKIo/TDKNs3Jcka4/s1600/dqe5dorlk20.jpg" class="img-responsive">
 
-{% img img-responsive http://4.bp.blogspot.com/-hB0Dqpagbi8/UtBvCKK_hnI/AAAAAAAAKJc/whV6VoeBBGc/s1600/xgxnntk5exw.jpg %}
+<img src="http://4.bp.blogspot.com/-hB0Dqpagbi8/UtBvCKK_hnI/AAAAAAAAKJc/whV6VoeBBGc/s1600/xgxnntk5exw.jpg" class="img-responsive">
 
-{% img img-responsive http://1.bp.blogspot.com/-sDupKnEYV5M/UtBu_LlWgPI/AAAAAAAAKIw/W7PspenSj6I/s1600/er2k-rbbjpc.jpg %}
+<img src="http://1.bp.blogspot.com/-sDupKnEYV5M/UtBu_LlWgPI/AAAAAAAAKIw/W7PspenSj6I/s1600/er2k-rbbjpc.jpg" class="img-responsive">
 
 
 <div class="row">
 	<div class="col-md-6">
-		{% img img-responsive http://2.bp.blogspot.com/-W8tyT7pTDg4/UtBvChItRXI/AAAAAAAAKJk/9SQdRgu1kjU/s1600/yt94ppe2ssa.jpg %}		
+		<img src="http://2.bp.blogspot.com/-W8tyT7pTDg4/UtBvChItRXI/AAAAAAAAKJk/9SQdRgu1kjU/s1600/yt94ppe2ssa.jpg" class="img-responsive">		
 	</div>	
 	<div class="col-md-6">
-		{% img img-responsive http://3.bp.blogspot.com/-OG4gS7xU0iM/UtBvAaiyuBI/AAAAAAAAKJA/ftT6p8tcHqA/s1600/q28jcgydoj0.jpg %}		
+		<img src="http://3.bp.blogspot.com/-OG4gS7xU0iM/UtBvAaiyuBI/AAAAAAAAKJA/ftT6p8tcHqA/s1600/q28jcgydoj0.jpg" class="img-responsive">		
 	</div>
 </div>		
 <br>
 
 
-{% img img-responsive http://4.bp.blogspot.com/-9xdDhBX2Dyc/UtBu9x4UaNI/AAAAAAAAKIY/YmoKzH1TH8U/s1600/bowm7uqfqw4.jpg %}
+<img src="http://4.bp.blogspot.com/-9xdDhBX2Dyc/UtBu9x4UaNI/AAAAAAAAKIY/YmoKzH1TH8U/s1600/bowm7uqfqw4.jpg" class="img-responsive">
 
 
 ## Хотьба на ходулях
 <div class="row">
 	<div class="col-md-4">
-		{% img img-responsive http://2.bp.blogspot.com/-CB2EaeZ-eZw/UtBu9R_QNGI/AAAAAAAAKIM/zNJ9I5Edaps/s1600/2bwa_zavcic.jpg %}		
+		<img src="http://2.bp.blogspot.com/-CB2EaeZ-eZw/UtBu9R_QNGI/AAAAAAAAKIM/zNJ9I5Edaps/s1600/2bwa_zavcic.jpg" class="img-responsive">		
 	</div>	
 	<div class="col-md-4">
-		{% img img-responsive http://4.bp.blogspot.com/-8qLChfrt-nM/UtBvB5D14II/AAAAAAAAKJo/JPugMirp5s0/s1600/j-ruvxxfdyw.jpg %}		
+		<img src="http://4.bp.blogspot.com/-8qLChfrt-nM/UtBvB5D14II/AAAAAAAAKJo/JPugMirp5s0/s1600/j-ruvxxfdyw.jpg" class="img-responsive">		
 	</div>
 	<div class="col-md-4">
-		{% img img-responsive http://1.bp.blogspot.com/-Hntwbx_NFeE/UtBu_vFa0oI/AAAAAAAAKJQ/MRDeItQZBW0/s1600/2uaydzhwmwc.jpg %}		
+		<img src="http://1.bp.blogspot.com/-Hntwbx_NFeE/UtBu_vFa0oI/AAAAAAAAKJQ/MRDeItQZBW0/s1600/2uaydzhwmwc.jpg" class="img-responsive">		
 	</div>
 </div>		
 
@@ -72,14 +72,14 @@ blogger_orig_url: http://notes.nonamenix.ru/2014/01/blog-post_11.html
 
 <div class="row">
 	<div class="col-md-6">
-		{% img img-responsive http://1.bp.blogspot.com/-ISGWCURtgBw/UtBvA_NTRiI/AAAAAAAAKJI/p77NqY-PRrc/s1600/uvp7pjsr4kg.jpg %}		
+		<img src="http://1.bp.blogspot.com/-ISGWCURtgBw/UtBvA_NTRiI/AAAAAAAAKJI/p77NqY-PRrc/s1600/uvp7pjsr4kg.jpg" class="img-responsive">		
 	</div>	
 	<div class="col-md-6">
-		{% img img-responsive http://2.bp.blogspot.com/-hBy2pJI01R8/UtBvDxCk-VI/AAAAAAAAKJ0/TWabu_ccf50/s1600/whvye9vd590.jpg %}		
+		<img src="http://2.bp.blogspot.com/-hBy2pJI01R8/UtBvDxCk-VI/AAAAAAAAKJ0/TWabu_ccf50/s1600/whvye9vd590.jpg" class="img-responsive">		
 	</div>
 </div>		
 
 ## На память 
 Ну а это я просто оставлю здесь =)
 
-{% img img-responsive  http://2.bp.blogspot.com/-Cxto4PRq9So/UtBvDCplQNI/AAAAAAAAKJw/9KvkMb3SsqA/s1600/z2c248rxpmk.jpg %}
+<img src=" http://2.bp.blogspot.com/-Cxto4PRq9So/UtBvDCplQNI/AAAAAAAAKJw/9KvkMb3SsqA/s1600/z2c248rxpmk.jpg" class="img-responsive">

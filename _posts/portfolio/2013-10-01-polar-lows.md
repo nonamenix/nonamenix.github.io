@@ -9,7 +9,7 @@ tags : [django, gis]
 
 Polar Lows - Сайт база данных полярных циклонов в северных морях.
 
-{% img img-responsive /assets/images/portfolio/polar_lows.png "Polar lows!" "Скриншот интерфейса для отображения полярных циклонов" %}
+<img src="/assets/images/portfolio/polar_lows.png "Polar lows!" "Скриншот интерфейса для отображения полярных циклонов"" class="img-responsive">
 
 <!--more-->
 

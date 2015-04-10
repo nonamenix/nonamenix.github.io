@@ -13,7 +13,7 @@ blogger_orig_url: http://notes.nonamenix.ru/2014/01/blog-post_9945.html
 
 Прикольная идея по реализации радио в консоле.
 
-{% img img-responsive http://4.bp.blogspot.com/-xFz_apzLicA/UtEg5kRrCkI/AAAAAAAAKK4/oYdhMf04MMs/s1600/cmd.png.1280x1280_q85.jpg %}
+<img src="http://4.bp.blogspot.com/-xFz_apzLicA/UtEg5kRrCkI/AAAAAAAAKK4/oYdhMf04MMs/s1600/cmd.png.1280x1280_q85.jpg" class="img-responsive">
 <!--more-->
 ## Собственно радио в консоле:
 

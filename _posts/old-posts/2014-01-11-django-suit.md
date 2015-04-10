@@ -13,7 +13,7 @@ blogger_orig_url: http://notes.nonamenix.ru/2014/01/django-suit.html
 
 *Django Suit* – весьма приятная тема для админки сверстанная на основе bootstrap.
 
-{% img img-responsive http://4.bp.blogspot.com/-ca0yJSwH8Gg/UtBsPBzVQXI/AAAAAAAAKHo/M0Vne-IWjnQ/s1600/django-suit.png.1280x600_q85_crop.png %}
+<img src="http://4.bp.blogspot.com/-ca0yJSwH8Gg/UtBsPBzVQXI/AAAAAAAAKHo/M0Vne-IWjnQ/s1600/django-suit.png.1280x600_q85_crop.png" class="img-responsive">
 
 <!--more-->
 
