@@ -5,35 +5,28 @@ title: Блокнот
 
 {% include JB/setup %}
 
-{% for post in paginator.posts %}
-    {% assign foundImage = 0 %}
-    {% assign images = post.content | split:"<img " %}    
-    {% for image in images %}
-        {% if image contains 'src' %}
-            {% if foundImage == 0 %}
-                {% assign html = image | split:"/>" | first %}
-                {% comment %}<img {{ html }} />{% endcomment %}
-                {% assign foundImage = 1 %}
-            {% endif %}
-        {% endif %}
-    {% endfor %}
+<div class="row">
+    {% for post in paginator.posts %}
+    <div class="col-md-12">
+        <article class="well">
+            <h2>
+                <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+            </h2>
 
-    <h2>
-        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <p class="small">
-        <span class="glyphicon glyphicon-tags"></span> &nbsp;{{ post.tags | array_to_sentence_string }} &nbsp;
-        <span class="glyphicon glyphicon-time"></span>  {{ post.date | date_to_string }}
-    </p>
+            <p class="small">
+                <span class="glyphicon glyphicon-tags"></span> &nbsp;{{ post.tags | array_to_sentence_string }} &nbsp;
+                <span class="glyphicon glyphicon-time"></span> {{ post.date | date_to_string }}
+            </p>
 
-    {{ post.excerpt }}
+            {{ post.excerpt }}
 
-    <div class="text-right">
-        <a class="btn btn-primary" href="{{ BASE_PATH }}{{ post.url }}">
-            Подробнее
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+            <div class="text-right">
+                <a class="btn btn-primary" href="{{ BASE_PATH }}{{ post.url }}">
+                    Подробнее
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </article>
     </div>
-
-    <hr>
-{% endfor %}
+    {% endfor %}
+</div>
