@@ -163,3 +163,9 @@ footer a {
     margin-left: 10px;
 }
 
+
+/* syntax */
+.highlight {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
