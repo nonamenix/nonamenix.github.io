@@ -30,7 +30,7 @@ theme :
           title="Sitewide RSS Feed">
 </head>
 <body>
-<nav class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-inverse {{page.category}}" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -55,15 +55,7 @@ theme :
 
                 <li class="{{notes_active}}"><a class="{{notes_active}}" href="{{ site.blog_url }}">Блокнот</a></li>
 
-                <li class="dropdown">
-                    <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle {{notes_active}}"
-                       data-toggle="dropdown">Архив <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        {% assign pages_list = site.pages %}
-                        {% assign group = 'blog_navigation' %}
-                        {% include JB/pages_list %}
-                    </ul>
-                </li>
+
             </ul>
         </div>
     </div>
