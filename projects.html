@@ -2,31 +2,25 @@
 layout: default
 title: Портфолио
 ---
-<style>
-    .no-padding {
-        padding: 0;
-    }
-</style>
-
-
 <div class="page-header">
     <h1>Портфолио</h1>
 </div>
 
-{% assign posts = site.categories["projects"] %}
-<div class="row">
-    {% for post in posts %}
-    <div class="col-sm-6 col-md-4 ">
-        <div class="panel panel-primary">
-            <div class="panel-heading">{{post.title}}</div>
-            <div class="panel-body no-padding">
-                <a href="{{post.url}}"><img class="img-responsive" src="{{post.image}}" alt="{{post.title}}"></a>
+<div class="well well-sm">
+    {% assign posts = site.categories["projects"] %}
+    <div class="row">
+        {% for post in posts %}
+        <div class="col-xs-6 col-sm-6 col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">{{post.title}}</div>
+                <div class="panel-body no-padding">
+                    <a href="{{post.url}}"><img class="img-responsive" src="{{post.image}}" alt="{{post.title}}"></a>
+                </div>
+                <div class="panel-footer"> {{ post.date | date: "%Y %B"}}</div>
             </div>
-            <div class="panel-footer"> {{ post.date | date: "%Y %B"}}</div>
         </div>
+        {% endfor %}
     </div>
-
-    {% endfor %}
 </div>
 
 

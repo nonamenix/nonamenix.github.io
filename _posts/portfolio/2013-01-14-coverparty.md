@@ -3,6 +3,7 @@ layout: post
 title: CoverParty
 categories: Projects
 image: /assets/images/portfolio/small/coverparty.jpg
+tags: [django, ]
 ---
 
 CoverParty — Музыкальный фестиваль, организуемый Yana Chudit Music Management. С 2007 года фестиваль проходит в Петербурге и собирает аудиторию более 5000 человек. За 5 лет фестиваль сменил несколько площадок, но вот уже в четвертый раз откроет новый концертный сезон клуба «Космонавт» 1 сентября.

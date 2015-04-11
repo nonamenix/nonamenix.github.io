@@ -2,59 +2,73 @@
 layout: default
 ---
 {% include JB/setup %}
+<h1>{{ page.title }} {% if page.tagline %}
+    <small>{{page.tagline}}</small>
+    {% endif %}
+</h1>
 
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+<div class="well well-sm">
+    <div class="row post-full">
+        <div class="col-md-12">
+            <div class="date">
+                <span>{{ page.date | date_to_long_string }}</span>
+            </div>
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="row post-full">
-  <div class="col-md-12">
-    <div class="date">
-      <span>{{ page.date | date_to_long_string }}</span>
-    </div>
-    <div class="content">
-      {{ content }}
-    </div>
-
+{% comment %}
+<div class="col-md-6">
     {% unless page.categories == empty %}
-
-    <br>
     <h4>Категории</h4>
-      <ul class="nav nav-pills">
-	      <!-- <li><i class="icon-folder-open"></i></li> -->
+    <ul class="nav nav-pills">
+        <!-- <li><i class="icon-folder-open"></i></li> -->
         {% assign categories_list = page.categories %}
         {% include JB/categories_list %}
-      </ul>
-    {% endunless %}
-
-    {% unless page.tags == empty %}
-    <h4>Tags</h4>
-      <ul class="nav nav-pills">
-	      <!-- <li><i class="icon-tags"></i></li> -->
-        {% assign tags_list = page.tags %}
-        {% include JB/tags_list %}
-      </ul>
-    {% endunless %}
-
-    
-    <ul class="pagination">
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Предыдщая</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Предыдщая</a></li>
-      {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Архив</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Следующая  &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Следующая &rarr;</a>
-      {% endif %}
     </ul>
-    <hr>
-    {% include JB/comments %}
-  </div>
-  
-  
-  
+    {% endunless %}
+</div>
+{% endcomment %}
+
+
+{% unless page.tags == empty %}
+<h4>Теги</h4>
+<div class="well">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-pills">
+                <!-- <li><i class="icon-tags"></i></li> -->
+                {% assign tags_list = page.tags %}
+                {% include JB/tags_list %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endunless %}
+
+<h4>Навигация</h4>
+<div class="well">
+    <ul class="pagination">
+        {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}"
+                            title="{{ page.previous.title }}">&larr; Предыдщая</a></li>
+        {% else %}
+        <li class="prev disabled"><a>&larr; Предыдщая</a></li>
+        {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Архив</a></li>
+        {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}"
+                            title="{{ page.next.title }}">Следующая &rarr;</a></li>
+        {% else %}
+        <li class="next disabled"><a>Следующая &rarr;</a>
+            {% endif %}
+    </ul>
 </div>
 
+<h4>Комментарии</h4>
+<div class="well">
+    {% include JB/comments %}
+</div>

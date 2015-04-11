@@ -1,10 +1,48 @@
 ---
 layout: index
 title: Встречная
-heder-title: Персональный сайт Иванова Данила aka nonamenix 
+heder-title: Персональный сайт Иванова Данила aka nonamenix
 group: navigation
 ---
 
 {% include JB/setup %}
 
+
+<!--<h2>Заметки из блокнота-->
+<!--<small><a href="/blog/">Перейти ко всем записям</a></small>-->
+<!--</h2>-->
+
+
+<!--<div class="well"></div>-->
+
+<h2>Портфолио
+    <small><a href="/projects.html">Перейти ко всем проектам</a></small>
+</h2>
+<div class="well">
+
+    {% assign posts = site.categories["projects"] %}
+    <div class="row">
+        {% for post in posts limit: 4 %}
+        <div class="col-xs-6 col-sm-6 col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">{{post.title}}</div>
+                <div class="panel-body no-padding">
+                    <a href="{{post.url}}">
+                        <img class="img-responsive" src="{{post.image}}" alt="{{post.title}}"></a>
+                </div>
+                <div class="panel-footer"> {{ post.date | date: "%Y %B"}}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<h2>Резюме
+    <small><a href="/cv.html">Посмотреть полную версию</a></small>
+</h2>
+<div class="well">
+    <a href="/cv.html">
+        <img src="/assets/images/cv/cv.png" alt="Резюме" class="img-responsive"/>
+    </a>
+</div>
 
