@@ -59,7 +59,7 @@ layout: default
 
         <div class="col-md-6 navigation__el navigation__el_l">
             {% if page.previous %}
-            <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="{{page.previous.category}}" title="{{ page.previous.title }}">
+            <a href="{{ BASE_PATH }}{{ page.previous.url }}" class="{{page.previous.category | downcase }}" title="{{ page.previous.title }}">
                 <small>Предыдущая</small>
                 <br/>
                 &larr; {{ page.previous.title }}
@@ -71,7 +71,7 @@ layout: default
 
         <div class="col-md-6 navigation__el navigation__el_r">
             {% if page.next %}
-            <a href="{{ BASE_PATH }}{{ page.next.url }}" class="{{page.next.category}}" title="{{ page.next.title }}">
+            <a href="{{ BASE_PATH }}{{ page.next.url }}" class="{{page.next.category | downcase}}" title="{{ page.next.title }}">
                 <small> Следующая</small>
                 <br/>
                 {{ page.next.title }} &rarr;
