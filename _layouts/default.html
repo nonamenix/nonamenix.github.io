@@ -41,6 +41,9 @@ theme :
                 </button>
                 <a class="navbar-brand" href="{{ HOME_PATH }}"><i class="fa fa-terminal"></i> {{ site.title }}</a>
             </div>
+            <!-- <form method="get" action="/search.html" class="navbar-form navbar-left">
+                <input type="text" class="form-control col-lg-8" placeholder="Поиск" name="qs">
+            </form> -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     {% assign pages_list = site.pages %}
@@ -77,11 +80,26 @@ theme :
   <script>
     $(function(){
         var margin = '0 -19px';
-        $("p:has(>img)").css('margin', margin);
-        $('.well .row div:has(>div>img)').css('margin', margin)
-            .find('div').css('padding', 0);
+        $(".content p:has(>img)")
+            .css('margin', margin);
+        
+        $('.content div:has(>div>img)')
+            .css('margin', margin)
+            .find('div')
+            .css('padding', 0);
+
+        $.ajax({
+          dataType: "json",
+          url: '/posts.json',
+          success: function(data){
+             $.each(data, function(key, val) {
+                console.log(val);
+            })
+
+         }, 
+         error: function(){console.log('something wrong')}
+     });
     })
-    
 </script>
 </body>
 </html>

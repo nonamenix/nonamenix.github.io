@@ -196,3 +196,12 @@ footer a {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
+.content .img-responsive {
+    width: 100%;
+}
+
+.content .embed-responsive {
+    margin-left: -19px;
+    margin-right: -19px;
+}

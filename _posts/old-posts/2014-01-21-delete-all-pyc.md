@@ -18,5 +18,5 @@ image: /assets/images/covers/bash.png
 <!-- more -->
 
 {% highlight bash %}
-find . -name "*.pyc" -exec rm -rf {} \;
+find . -name '*.pyc' -delete
 {% endhighlight %}

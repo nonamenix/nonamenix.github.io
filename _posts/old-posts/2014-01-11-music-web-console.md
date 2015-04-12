@@ -14,11 +14,18 @@ image: http://4.bp.blogspot.com/-xFz_apzLicA/UtEg5kRrCkI/AAAAAAAAKK4/oYdhMf04MMs
 
 Прикольная идея по реализации радио в консоле.
 
-<img src="http://4.bp.blogspot.com/-xFz_apzLicA/UtEg5kRrCkI/AAAAAAAAKK4/oYdhMf04MMs/s1600/cmd.png.1280x1280_q85.jpg" class="img-responsive">
-
 <!--more-->
 
-## Собственно радио в консоле:
+<!-- 4:3 aspect ratio -->
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="http://cmd.fm"></iframe>
+</div>
 
-Сайт: [http://cmd.fm/](http://cmd.fm/)
- <iframe height="600" src="http://cmd.fm" width="800"></iframe>
+ Сайт: [http://cmd.fm/](http://cmd.fm/)
+
+ А еще они в консоль выводят: 
+
+> Hello, we are Workaxe!
+
+> If backend or frontend developing is your girlfriend, we’d love to talk with you! [jobs@workaxe.com](mailto:jobs@workaxe.com)
+ 

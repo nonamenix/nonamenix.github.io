@@ -48,9 +48,6 @@ show_on_main: 1
 		<img src="http://3.bp.blogspot.com/-OG4gS7xU0iM/UtBvAaiyuBI/AAAAAAAAKJA/ftT6p8tcHqA/s1600/q28jcgydoj0.jpg" class="img-responsive">		
 	</div>
 </div>		
-<br>
-
-
 <img src="http://4.bp.blogspot.com/-9xdDhBX2Dyc/UtBu9x4UaNI/AAAAAAAAKIY/YmoKzH1TH8U/s1600/bowm7uqfqw4.jpg" class="img-responsive">
 
 
