@@ -19,15 +19,18 @@ $ sudo apt-get update
 $ sudo apt-get install oracle-java7-installer
 {% endhighlight %} 
 
-## Install Tomcat7 {% highlight bash %}
+## Install Tomcat7 
 
-$ sudo apt-get install tomcat7\n\n{% endhighlight %} 
+{% highlight bash %}
+$ sudo apt-get install tomcat7
+{% endhighlight %} 
+
 if tomcat write: "no JDK found - please set JAVA_HOME" {% highlight bash %}
 $ sudo vim  /etc/default/tomcat7
 JAVA_HOME=/usr/lib/jvm/java-7-oracle
 {% endhighlight %} 
 
-look at [http://localhost:8080/}(http://localhost:8080/) 
+look at [http://localhost:8080/](http://localhost:8080/) 
 
 ## Install GeoServer {% highlight bash %}
 

@@ -1,6 +1,6 @@
 ---
 theme :
-  name : bootstrap
+    name : bootstrap
 ---
 {% include JB/setup %}
 
@@ -25,64 +25,61 @@ theme :
     <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
     <![endif]-->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate"
-          title="Sitewide ATOM Feed">
+    title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate"
-          title="Sitewide RSS Feed">
+    title="Sitewide RSS Feed">
 </head>
 <body>
-<nav class="navbar navbar-inverse {{page.category}}" role="navigation">
+    <nav class="navbar navbar-inverse {{page.category}}" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ HOME_PATH }}"><i class="fa fa-terminal"></i> {{ site.title }}</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    {% assign pages_list = site.pages %}
+                    {% assign group = 'navigation' %}
+                    {% include JB/pages_list %}
+
+                    {% assign url = page.url | remove: '/blog/' %}{% if url != page.url %}{% assign notes_active = 'active' %}{% else %}{% assign notes_active = '' %}{% endif %}
+
+                    <li class="{{notes_active}}"><a class="{{notes_active}}" href="{{ site.blog_url }}">Блокнот</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ HOME_PATH }}"><i class="fa fa-terminal"></i> {{ site.title }}</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                {% assign pages_list = site.pages %}
-                {% assign group = 'navigation' %}
-                {% include JB/pages_list %}
-
-                {% assign url = page.url | remove: '/projects/' %}{% if url != page.url %}{% assign portfolio_active = 'active' %}{% else %}{% assign portfolio_active = '' %}{% endif %}
-
-                <li class="{{portfolio_active}}"><a class="{{portfolio_active}}" href="/projects.html">Портфолио</a></li>
-
-                {% assign url = page.url | remove: '/blog/' %}{% if url != page.url %}{% assign notes_active = 'active' %}{% else %}{% assign notes_active = '' %}{% endif %}
-
-                <li class="{{notes_active}}"><a class="{{notes_active}}" href="{{ site.blog_url }}">Блокнот</a></li>
-
-
-            </ul>
-        </div>
-    </div>
-</nav>
-<div class="container">
-    {{ content }}
-    <hr>
-    <footer>
-        <p>
-            &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-            <span class="pull-right text-muted">
-              <a href="http://twitter.com/{{site.author.twitter}}"><i class="fa fa-twitter fa-2x"></i></a>
-              <a href="http://vk.com/{{site.author.vk}}"><i class="fa fa-vk fa-2x"></i></a>
-              <a href="http://github.com/{{site.author.github}}"><i class="fa fa-github fa-2x"></i></a>
-              <a href="https://www.linkedin.com/profile/view?id={{site.author.linkdin}}"><i class="fa fa-linkedin fa-2x"></i></a>
-            </span>
-        </p>
-    </footer>
-</div>
-{% include JB/analytics %}
-<script src="{{ ASSET_PATH }}/resources/jquery/jquery-2.1.1.min.js"></script>
-<script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
-<script src="{{ ASSET_PATH }}/resources/material/js/ripples.min.js"></script>
-<script src="{{ ASSET_PATH }}/resources/material/js/material.min.js"></script>
-<script>
+        {{ content }}
+        <hr>
+        <footer>
+            <p>
+                &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+                <span class="pull-right text-muted">
+                  <a href="http://twitter.com/{{site.author.twitter}}"><i class="fa fa-twitter fa-2x"></i></a>
+                  <a href="http://vk.com/{{site.author.vk}}"><i class="fa fa-vk fa-2x"></i></a>
+                  <a href="http://github.com/{{site.author.github}}"><i class="fa fa-github fa-2x"></i></a>
+                  <a href="https://www.linkedin.com/profile/view?id={{site.author.linkdin}}"><i class="fa fa-linkedin fa-2x"></i></a>
+              </span>
+          </p>
+      </footer>
+  </div>
+  {% include JB/analytics %}
+  <script src="{{ ASSET_PATH }}/resources/jquery/jquery-2.1.1.min.js"></script>
+  <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
+  <script src="{{ ASSET_PATH }}/resources/material/js/ripples.min.js"></script>
+  <script src="{{ ASSET_PATH }}/resources/material/js/material.min.js"></script>
+  <script>
     $(function(){
-        $( "p:has(>img)").css('margin', '0 -19px');
+        var margin = '0 -19px';
+        $("p:has(>img)").css('margin', margin);
+        $('.well .row div:has(>div>img)').css('margin', margin)
+            .find('div').css('padding', 0);
     })
     
 </script>

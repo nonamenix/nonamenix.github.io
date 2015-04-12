@@ -16,7 +16,7 @@ show_on_main: 1
 
 Во второй день мы выдвинулись на Ольхон — Шаманское сердце Байкала.
 
-<img src="http://1.bp.blogspot.com/-KqtU5K0kTwY/UtBxQnEhmFI/AAAAAAAAKKY/CvvQg0PjIgM/s1600/DSC_0255.jpg.1280x1280_q85.jpg" class="img-responsive">
+<img src="http://1.bp.blogspot.com/-KqtU5K0kTwY/UtBxQnEhmFI/AAAAAAAAKKY/CvvQg0PjIgM/s1600/DSC_0255.jpg.1280x1280_q85.jpg" class="img-responsive full-width">
 
 **HOW-TO** Для того чтобы добраться до Ольхона необходимо:
 

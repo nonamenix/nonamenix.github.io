@@ -35,8 +35,6 @@ show_on_main: 1
 
 ## Стрельба из лука
 
-<img src="http://2.bp.blogspot.com/-9vO2-ogwp_E/UtBu-Ur4B9I/AAAAAAAAKIo/TDKNs3Jcka4/s1600/dqe5dorlk20.jpg" class="img-responsive">
-
 <img src="http://4.bp.blogspot.com/-hB0Dqpagbi8/UtBvCKK_hnI/AAAAAAAAKJc/whV6VoeBBGc/s1600/xgxnntk5exw.jpg" class="img-responsive">
 
 <img src="http://1.bp.blogspot.com/-sDupKnEYV5M/UtBu_LlWgPI/AAAAAAAAKIw/W7PspenSj6I/s1600/er2k-rbbjpc.jpg" class="img-responsive">

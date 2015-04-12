@@ -2,18 +2,23 @@
 layout: default
 ---
 {% include JB/setup %}
-<h1>{{ page.title }} {% if page.tagline %}
-    <small>{{page.tagline}}</small>
+<h1 style="margin-bottom: 0px;">
+{{ page.title }} 
+    {% if page.tagline %}
+        <small>{{page.tagline}}</small>
     {% endif %}
+    
 </h1>
+<p class="small" style="margin: 2px;">{{ page.date | date_to_long_string }}</p>
+
 
 
 <div class="well well-sm">
     <div class="row post-full">
         <div class="col-md-12">
-            <div class="date">
-                <span>{{ page.date | date_to_long_string }}</span>
-            </div>
+            
+            
+            
             <div class="content">
                 {{ content }}
             </div>
