@@ -10,6 +10,7 @@ modified_time: '2014-01-15T08:40:15.832+04:00'
 thumbnail: http://3.bp.blogspot.com/-57Ij5maze-8/UtWa50kWF_I/AAAAAAAAKMo/2SVD1zyIeSU/s72-c/tjfAO.jpg
 blogger_id: tag:blogger.com,1999:blog-818473394352822470.post-8978306347620525772
 blogger_orig_url: http://notes.nonamenix.ru/2014/01/webupd8teamsublime-text2-sudo-add-apt.html
+image: /assets/images/covers/subl.png
 ---
 
 Для установки необходимо добавить репозиторий webupd8team/sublime-text2, обновить пакеты и установить редактор:

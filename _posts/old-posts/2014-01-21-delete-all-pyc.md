@@ -6,9 +6,11 @@ author: Данил Иванов
 tags:
 - howto
 - ubuntu
+- python
 modified_time: '2014-02-18T00:02:15.274+04:00'
 blogger_id: tag:blogger.com,1999:blog-818473394352822470.post-2012977537578726905
 blogger_orig_url: http://notes.nonamenix.ru/2014/01/pyc.html
+image: /assets/images/covers/bash.png
 ---
 
 Команда для удаления все скомпилированных в байт код pyc файлы в Linux:

@@ -10,6 +10,8 @@ modified_time: '2014-01-11T14:27:31.695+04:00'
 thumbnail: http://4.bp.blogspot.com/-9vO2-ogwp_E/UtBu-Ur4B9I/AAAAAAAAKIc/C-Amc09MUcY/s72-c/dqe5dorlk20.jpg
 blogger_id: tag:blogger.com,1999:blog-818473394352822470.post-8450063918321905215
 blogger_orig_url: http://notes.nonamenix.ru/2014/01/blog-post_11.html
+image: /assets/images/covers/talci.jpg
+show_on_main: 1
 ---
 
 Изначально мы планировали в первый же день приезда друзей выехать на Ольхон, однако из-за чудесной работы аэрофлота в шереметьево пришлось быстро изменять планы. Таким образом мы отправились в Листвянку и музей деревянного зодчетсва расположенный прямо под открытым небом.

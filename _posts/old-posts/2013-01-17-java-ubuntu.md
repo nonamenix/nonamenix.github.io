@@ -10,6 +10,7 @@ tags:
 modified_time: '2014-01-15T00:01:44.430+04:00'
 blogger_id: tag:blogger.com,1999:blog-818473394352822470.post-1556223678851550732
 blogger_orig_url: http://notes.nonamenix.ru/2013/01/blog-post.html
+image: /assets/images/covers/java.jpg
 ---
 
 Установка java от oracle на ubuntu: 

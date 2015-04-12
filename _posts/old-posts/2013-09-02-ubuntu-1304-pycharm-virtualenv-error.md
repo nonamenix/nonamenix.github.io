@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Ubuntu 13.04 :: PyCharm ошибка при создании виртуального окружения'
+title: 'Ошибка создания виртуального окружения в PyCharm'
 date: '2013-09-02T23:27:00.005+04:00'
 author: Данил Иванов
 tags:
@@ -10,6 +10,7 @@ tags:
 modified_time: '2014-01-15T00:47:47.455+04:00'
 blogger_id: tag:blogger.com,1999:blog-818473394352822470.post-5491408863163659088
 blogger_orig_url: http://notes.nonamenix.ru/2013/09/ubuntu-1304-pycharm-virtualenv-error.html
+image: /assets/images/covers/pycharm.png
 ---
 
 При попытке создать виртуальное окружение из PyCharm'a появляется окно с ошибкой: 

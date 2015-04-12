@@ -8,6 +8,7 @@ tags:
 modified_time: '2014-02-16T22:39:02.249+04:00'
 blogger_id: tag:blogger.com,1999:blog-818473394352822470.post-746323200779358039
 blogger_orig_url: http://notes.nonamenix.ru/2014/02/coffeescript-zip-function-for-dict.html
+image: /assets/images/covers/zip.jpg
 ---
 
 В CoffeeScript не оказалось функциии **zip**, которая мне очень понравился в Python.

@@ -163,9 +163,35 @@ footer a {
     margin-left: 10px;
 }
 
-
 /* syntax */
 .highlight {
     -webkit-border-radius: 0px;
     border-radius: 0px;
+}
+
+/* Blog */
+
+.blog-posts .panel-body {
+    padding: 0;
+    height: 300px;
+}
+
+.blog-posts .panel-footer h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.blog-post a {
+    color: #666666;
+    text-decoration: none;
+
+}
+
+.blog-post .panel:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }

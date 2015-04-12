@@ -9,6 +9,7 @@ modified_time: '2014-01-15T08:36:47.222+04:00'
 thumbnail: http://3.bp.blogspot.com/-NNHRw7X2u_4/Uq_HOYR6ITI/AAAAAAAAJ6U/2xSUZpMzeAc/s72-c/detail_1358343195_1.jpg.1280x1280_q85.jpg
 blogger_id: tag:blogger.com,1999:blog-818473394352822470.post-9155462042803066400
 blogger_orig_url: http://notes.nonamenix.ru/2013/12/django-managepy-basha.html
+image: /assets/images/covers/bash.png
 ---
 
 Расширение добавляет автокомлит для django manage.py в линуксовую терминал.
