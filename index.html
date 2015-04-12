@@ -8,10 +8,12 @@ group: navigation
 {% include JB/setup %}
 
 
-<!--<h2>Заметки из блокнота-->
-<!--<small><a href="/blog/">Перейти ко всем записям</a></small>-->
-<!--</h2>-->
+<h2>Заметки из блокнота
+    <small><a href="/blog/">Перейти ко всем записям</a></small>
+</h2>
 
+{% assign posts = site.posts|where:"show_on_main":1 |limit:4  %}
+{% include posts.html %}
 
 <!--<div class="well"></div>-->
 

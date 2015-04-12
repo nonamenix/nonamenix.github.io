@@ -10,7 +10,7 @@ modified_time: '2014-01-15T01:07:48.241+04:00'
 thumbnail: http://1.bp.blogspot.com/-KqtU5K0kTwY/UtBxQnEhmFI/AAAAAAAAKKY/CvvQg0PjIgM/s72-c/DSC_0255.jpg.1280x1280_q85.jpg
 blogger_id: tag:blogger.com,1999:blog-818473394352822470.post-8055485702180324114
 blogger_orig_url: http://notes.nonamenix.ru/2014/01/blog-post_7492.html
-image: /assets/images/covers/olkhon.jpg
+image: /assets/images/covers/baikal.jpg
 show_on_main: 1
 ---
 
