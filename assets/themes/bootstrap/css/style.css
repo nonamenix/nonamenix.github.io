@@ -187,7 +187,6 @@ footer a {
 
 }
 
-
 .blog-post .panel:hover {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
     -webkit-transition: all .3s ease-out;
@@ -201,7 +200,21 @@ footer a {
     width: 100%;
 }
 
+.content ul {
+    font-weight: 300;
+    list-style-type: square;
+}
+
 .content .embed-responsive {
     margin-left: -19px;
     margin-right: -19px;
+}
+
+/* Search result*/
+.gs-title {
+    height: 24px !important;
+}
+
+.gsc-input-box {
+    border: none !important;
 }
