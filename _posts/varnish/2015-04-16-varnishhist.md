@@ -8,7 +8,7 @@ image: /assets/images/covers/varnish.jpg
 show_on_main: 1
 ---
 
-**Varnishhist** - Это консольная утилита отображающая гистограмму последних n запросов к Varnish. 
+**Varnishhist** - Это консольная утилита, отображающая гистограмму распределения последних n запросов к Varnish. 
 
 <img class="img-responsive" src="/assets/images/posts/varnishhist.png">
 <br>
