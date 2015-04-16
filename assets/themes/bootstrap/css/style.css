@@ -204,6 +204,9 @@ footer a {
     font-weight: 300;
     list-style-type: square;
 }
+.content p+ul {
+    margin-top: -10px;
+}
 
 .content .embed-responsive {
     margin-left: -19px;

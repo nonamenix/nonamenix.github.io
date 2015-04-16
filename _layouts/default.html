@@ -87,7 +87,7 @@ theme :
             .css('margin', margin)
             .find('div')
             .css('padding', 0);
-
+        {% comment %}
         $.ajax({
           dataType: "json",
           url: '/posts.json',
@@ -96,9 +96,10 @@ theme :
                 console.log(val);
             })
 
-         }, 
+         },
          error: function(){console.log('something wrong')}
-     });
+        });
+        {% endcomment %}
     })
 </script>
 </body>
