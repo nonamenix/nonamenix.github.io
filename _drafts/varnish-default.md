@@ -4,7 +4,7 @@ title: Установка Varnish
 tags: 
  - varnish
  - highload
- 
+---
 ## Установка
 Про установку и быстрый запуск хорошо описано в [официальной документации](https://www.varnish-cache.org/docs/4.0/installation/index.html). 
 На Ubuntu установка сводится к команде: 

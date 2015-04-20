@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Varnish Default VCL
+
 ---
 
 {% highlight C %}
