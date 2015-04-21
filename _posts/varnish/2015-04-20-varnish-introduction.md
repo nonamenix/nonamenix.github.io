@@ -5,6 +5,7 @@ image: /assets/images/covers/varnish.jpg
 tags:
   - varnish
   - highload
+show_on_main: 1
 ---
 
 

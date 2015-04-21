@@ -20,8 +20,6 @@ group: navigation
 <h2>Портфолио
     <small><a href="/projects.html">Перейти ко всем проектам</a></small>
 </h2>
-
-
     {% assign posts = site.categories["projects"] %}
     <div class="row">
         {% for post in posts limit: 4 %}
