@@ -5,20 +5,22 @@
             <div class="panel panel-default ">
                 {% if post.image %}
                 <div class="panel-body"
-                     style="background: url({{post.image}}) no-repeat top center; background-size: cover">
-                    {% else %}
-                    <div class="panel-body"
-                         style="background: url(/assets/images/covers/{{post.date | date: '%d' | modulo: 2 | plus: 1}}_small.jpeg) no-repeat top left">
-                        {% endif %}
-                    </div>
-                    <div class="panel-footer">
-                        <h2>{{ post.title }} </h2>
-                        {{ post.date | date_to_long_string }} |
-                        {{ post.tags | join: ', ' }}
-                    </div>
+                     style="background: url({{post.image}}) no-repeat top center; background-size: cover"></div>
+                {% else %}
+                <div class="panel-body"
+                     style="background: url(/assets/images/covers/{{post.date | date: '%d' | modulo: 2 | plus: 1}}_small.jpeg) no-repeat top left"></div>
+                {% endif %}
+
+                <div class="panel-footer">
+                    <button class="btn btn-fab btn-raised btn-material-lightblue">
+                        <i class="glyphicon glyphicon-arrow-right"></i>
+                    </button>
+                    <h2>{{ post.title }} </h2>
+                    {{ post.date | date_to_long_string }} |
+                    {{ post.tags | join: ', ' }}
                 </div>
+            </div>
         </a>
     </div>
-
     {% endfor %}
 </div>
