@@ -1,8 +1,10 @@
 ---
 layout: post
-title: Varnish Default VCL
+title: Разбор стандартного Varnish VCL файла
 
 ---
+
+Ниже приведён default.vcl с комментариями.
 
 {% highlight C %}
 sub vcl_recv {
@@ -14,6 +16,9 @@ sub vcl_recv {
             set req.http.X-Forwarded-For = client.ip;
         }
     }
+    
+    // Отсекаем недопустимые методы запросов
+    // Non-RFC2616 or CONNECT which is weird.
     if (req.request != "GET" &&
       req.request != "HEAD" &&
       req.request != "PUT" &&
@@ -21,15 +26,16 @@ sub vcl_recv {
       req.request != "TRACE" &&
       req.request != "OPTIONS" &&
       req.request != "DELETE") {
-        /* Non-RFC2616 or CONNECT which is weird. */
         return (pipe);
     }
+    
+    // Кэшируются только GET и HEAD запросы 
     if (req.request != "GET" && req.request != "HEAD") {
-        /* We only deal with GET and HEAD by default */
         return (pass);
     }
+    
+    // По умолчанию запросы которые требуют авторизации, либо имеют установленные куки не кэшируются
     if (req.http.Authorization || req.http.Cookie) {
-        /* Not cacheable by default */
         return (pass);
     }
     return (lookup);
@@ -50,7 +56,10 @@ sub vcl_pass {
 }
 
 sub vcl_hash {
-    hash_data(req.url);
+    // Функция для подсчета хэша от запроса. Здесь определяются параметры, которые будут участвовать при выборе кэша.
+    hash_data(req.url);  // URL ресурса
+    
+    // Если указан хост, к которому идет обращение, то в хеш включается он, в противном случае ip-адресс.
     if (req.http.host) {
         hash_data(req.http.host);
     } else {
@@ -60,17 +69,19 @@ sub vcl_hash {
 }
 
 sub vcl_hit {
+    // В случае попадания в кэш управление переходит в функцию vcl_deliver
     return (deliver);
 }
 
 sub vcl_miss {
+    // В случае промаха управление переходит в функцию vcl_backend_fetch
     return (fetch);
 }
 
 sub vcl_fetch {
-    if (beresp.ttl <= 0s ||
-        beresp.http.Set-Cookie ||
-        beresp.http.Vary == "*") {
+    if (beresp.ttl <= 0s ||  // Если TTL ответа не положительный
+        beresp.http.Set-Cookie || // или ответ от бэкенда устанавливает куки 
+        beresp.http.Vary == "*") {  // или ответ зависит от всех параметров запроса. 
                 /*
                  * Mark as "Hit-For-Pass" for the next 2 minutes
                  */
@@ -109,7 +120,7 @@ sub vcl_error {
 }
 
 sub vcl_init {
-        return (ok);
+    return (ok);
 }
 
 sub vcl_fini {

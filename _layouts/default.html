@@ -35,9 +35,7 @@ theme :
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{{ HOME_PATH }}"><i class="fa fa-terminal"></i> {{ site.title }}</a>
             </div>
@@ -49,9 +47,7 @@ theme :
                     {% assign pages_list = site.pages %}
                     {% assign group = 'navigation' %}
                     {% include JB/pages_list %}
-
                     {% assign url = page.url | remove: '/blog/' %}{% if url != page.url %}{% assign notes_active = 'active' %}{% else %}{% assign notes_active = '' %}{% endif %}
-
                     <li class="{{notes_active}}"><a class="{{notes_active}}" href="{{ site.blog_url }}">Блокнот</a></li>
                 </ul>
             </div>
@@ -82,7 +78,7 @@ theme :
         var margin = '0 -19px';
         $(".content p:has(>img)")
             .css('margin', margin);
-        
+
         $('.content div:has(>div>img)')
             .css('margin', margin)
             .find('div')
