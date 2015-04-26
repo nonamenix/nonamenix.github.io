@@ -14,7 +14,7 @@ excerpt_separator: "<!--more-->"
 title : nonamenix@angara
 tagline: Site Tagline
 author :
-  name : Danil Ivanov
+  name : Danil Ivanov aka nonamenix
   email : nonamenix@gmail.com
   github : nonamenix
   twitter : nonamenix
@@ -30,7 +30,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://nonamenix.github.io
+production_url : http://nonamenix.ru
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
