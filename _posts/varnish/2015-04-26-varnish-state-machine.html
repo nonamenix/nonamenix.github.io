@@ -1,37 +1,43 @@
 ---
 layout: post
-title: Varnish Configuration Language
-image: /assets/images/covers/varnish.jpg
-tags: 
- - varnish
- - highload
+title: Varnish State Machine
+image: /assets/images/covers/varnish_2.png
+tags: [varnish, highload]
 ---
 
-## Описание языка
+<p>
+    <strong>Varnish State Machine</strong> — конечный автомат, описывающий процесс обработки каждого приходящего
+    запроса.
+</p>
+<p>
+    В упрощенном варианте обработка запроса проходит как показано на диаграмме, приведенной ниже:
+</p>
 
-VCL — Специализированный предметно-ориентированный язык программирования, реализующий обработку запросов согласно 
-конечному автомату Varnish.
+<img class="img-responsive"
+     src="https://docs.google.com/drawings/d/12YykcOea1XUd0eqP_wt54A-hfAFhPKl_MlnAWKHt7_g/pub?w=1215&amp;h=601">
 
-В упрощенном варианте флоу стейт-машины Varnish выглядит следующим образом: 
+<p>
+    Сама стейт-машина Varnish выглядит примерно следующим образом (постепенно дорабатывается):
+</p>
 
-<img class="img-responsive" src="https://docs.google.com/drawings/d/12YykcOea1XUd0eqP_wt54A-hfAFhPKl_MlnAWKHt7_g/pub?w=1215&amp;h=601">
-
-Сама стейт-машина Varnish выглядит выглядит примерно следующим образом (постепенно дорабатывается):  
-   
 <div class="mxgraph" style="position:relative;overflow:hidden;width:100%;">
     <div style="width:1px;height:1px;overflow:hidden;">
         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
     </div>
 </div>
 
-
-
-При загрузке новой конфигурации, главный процесс *varnishd* компилирует **VCL** в **C**.
-Код, который получается в результате компиляции можно посмотреть запустив varnishd с параметром *-С*, например:
-
-{% highlight bash %}
-sudo varnishd -f ~/Projects/sandbox/varnish.vcl -n ~/Projects/sandbox/varnish_home/ -u nonamenix -C
-{% endhighlight %}
-
+<h4>Полезные ссылки</h4> 
+<p>
+    <ul>
+        <li>
+            <a href="https://www.varnish-software.com/static/book/VCL_Basics.html">Схема от Varnish</a> - 
+            к сожалению на данный момент не актуальная т.к. неокторые функции, например, vcl_fetch разбились, 
+            либо переименовались. 
+        </li>
+        <li><a href="https://www.varnish-cache.org/docs/trunk/reference/states.html">Varnish Processing States</a> - 
+            визуально сложно воспринять с первого подхода.</li>
+        <li><a href="http://www.emanuelis.eu/2014/09/25/varnish-4-vcl-request-flow/">Varnish Flow от Emanuelis</a> - более актуальная схема чем на сайте Varnish</li>
+    </ul>
+</p>
 
 <script type="text/javascript" src="https://www.draw.io/js/embed-static.min.js"></script>
