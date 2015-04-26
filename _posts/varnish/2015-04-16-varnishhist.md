@@ -5,7 +5,6 @@ tags:
   - varnish
   - highload
 image: /assets/images/covers/varnish.jpg
-show_on_main: 1
 ---
 
 **Varnishhist** - это консольная утилита, отображающая гистограмму распределения последних n запросов к Varnish. 
