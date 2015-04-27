@@ -35,10 +35,11 @@ show_on_main: 1
 
 Решили пойти на проверенное место где ранее уже стояли. Идти пришлось примерно километра 4, местами даже по пескам (После этого наконец-то прочел фантастический роман [Дюна](https://ru.wikipedia.org/wiki/%D0%94%D1%8E%D0%BD%D0%B0_(%D1%80%D0%BE%D0%BC%D0%B0%D0%BD)) от Фрэнка Герберта).
 
-<img src="http://3.bp.blogspot.com/-oxGm0gt_5RU/UtBxRWgKeuI/AAAAAAAAKKk/gyi2uGjpR68/s1600/theroad.jpg" class="img-responsive">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.google.com/maps/d/u/0/embed?mid=zpeGhDbj7AdQ.kE8Bckg1ck7U"></iframe>
+</div>
 
-
-Посмотреть на <a href="https://mapsengine.google.com/map/edit?mid=zpeGhDbj7AdQ.kE8Bckg1ck7U">GoogleMaps</a>
+Посмотреть на <a href="https://www.google.com/maps/d/edit?mid=zpeGhDbj7AdQ.kE8Bckg1ck7U">GoogleMaps</a>
 
 <img src="http://1.bp.blogspot.com/-LlmJJs0cHTM/UtBxQj6MAXI/AAAAAAAAKKQ/JnIkcWKbqMM/s1600/dsc_0203.jpg" class="img-responsive">
 
