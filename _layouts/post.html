@@ -16,7 +16,8 @@ layout: default
         <small>{{page.tagline}}</small>
         {% endif %}
     </h1>
-    <p class="small" style="margin: 2px;" itemprop="dateCreated">{{ page.date | date_to_long_string }}</p>
+    <meta itemprop="dateCreated" content="{{ page.date | date: '%Y-%m-%d' }}"/>
+    <p class="small" style="margin: 2px;">{{ page.date | date_to_long_string }}</p>
 
 
     <div class="well well-sm">
