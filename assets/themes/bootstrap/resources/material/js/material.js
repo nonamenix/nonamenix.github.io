@@ -1,6 +1,6 @@
-/* globals ripples */
+var jQuery = require("jquery");
 
-$(function (){
+var material = function ($){
 
     if (typeof ripples == "object") {
         ripples.init(".btn:not(.btn-link), .navbar a:not(.withoutripple), .nav-tabs a:not(.withoutripple), .withripple");
@@ -81,4 +81,6 @@ $(function (){
         }
         $(this).prev().val(value);
     });
-});
+};
+
+module.exports = material;

@@ -1,15 +1,15 @@
 /* Copyright 2014+, Federico Zivolo, LICENSE at https://github.com/FezVrasta/bootstrap-material-design/blob/master/LICENSE.md */
 /* globals CustomEvent */
 
-window.ripples = {
-    init : function(withRipple) {
+ripples = {
+    init: function (withRipple) {
         "use strict";
 
         // Cross browser matches function
         function matchesSelector(domElement, selector) {
             var matches = domElement.matches || domElement.matchesSelector || domElement.webkitMatchesSelector ||
                 domElement.mozMatchesSelector ||
-                    domElement.msMatchesSelector || domElement.oMatchesSelector;
+                domElement.msMatchesSelector || domElement.oMatchesSelector;
             return matches.call(domElement, selector);
         }
 
@@ -18,8 +18,8 @@ window.ripples = {
             rippleStartTime = 500;
 
         // Helper to bind events on dynamically created elements
-        var bind = function(event, selector, callback) {
-            document.addEventListener(event, function(e) {
+        var bind = function (event, selector, callback) {
+            document.addEventListener(event, function (e) {
                 var target = (typeof e.detail !== "number") ? e.detail : e.target;
 
                 if (matchesSelector(target, selector)) {
@@ -28,16 +28,16 @@ window.ripples = {
             });
         };
 
-        var rippleStart = function(e, target) {
+        var rippleStart = function (e, target) {
 
             // Init variables
-            var $rippleWrapper  = target,
-                $el             = $rippleWrapper.parentNode,
-                $ripple         = document.createElement("div"),
-                elPos           = $el.getBoundingClientRect(),
-                mousePos        = {x: e.clientX - elPos.left, y: e.clientY - elPos.top},
-                scale           = "transform:scale(" + Math.round($rippleWrapper.offsetWidth / 5) + ")",
-                rippleEnd       = new CustomEvent("rippleEnd", {detail: $ripple}),
+            var $rippleWrapper = target,
+                $el = $rippleWrapper.parentNode,
+                $ripple = document.createElement("div"),
+                elPos = $el.getBoundingClientRect(),
+                mousePos = {x: e.clientX - elPos.left, y: e.clientY - elPos.top},
+                scale = "transform:scale(" + Math.round($rippleWrapper.offsetWidth / 5) + ")",
+                rippleEnd = new CustomEvent("rippleEnd", {detail: $ripple}),
                 refreshElementStyle;
 
             $ripplecache = $ripple;
@@ -59,10 +59,10 @@ window.ripples = {
 
             // Set scale value to ripple and animate it
             $ripple.className = "ripple ripple-on";
-            $ripple.setAttribute("style", $ripple.getAttribute("style") + ["-ms-" + scale,"-moz-" + scale,"-webkit-" + scale,scale].join(";"));
+            $ripple.setAttribute("style", $ripple.getAttribute("style") + ["-ms-" + scale, "-moz-" + scale, "-webkit-" + scale, scale].join(";"));
 
             // This function is called when the animation is finished
-            setTimeout(function() {
+            setTimeout(function () {
 
                 // Let know to other functions that this element has finished the animation
                 $ripple.dataset.animating = 0;
@@ -72,27 +72,27 @@ window.ripples = {
 
         };
 
-        var rippleOut = function($ripple) {
+        var rippleOut = function ($ripple) {
             // Clear previous animation
             $ripple.className = "ripple ripple-on ripple-out";
 
             // Let ripple fade out (with CSS)
-            setTimeout(function() {
+            setTimeout(function () {
                 $ripple.remove();
             }, rippleOutTime);
         };
 
         // Helper, need to know if mouse is up or down
         var mouseDown = false;
-        document.body.onmousedown = function() {
+        document.body.onmousedown = function () {
             mouseDown = true;
         };
-        document.body.onmouseup = function() {
+        document.body.onmouseup = function () {
             mouseDown = false;
         };
 
         // Append ripple wrapper if not exists already
-        var rippleInit = function(e, target) {
+        var rippleInit = function (e, target) {
 
             if (target.getElementsByClassName("ripple-wrapper").length === 0) {
                 target.className += " withripple";
@@ -111,14 +111,14 @@ window.ripples = {
         bind("mouseover", withRipple, rippleInit);
 
         // start ripple effect on mousedown
-        bind("mousedown", ".ripple-wrapper", function(e, $ripple) {
+        bind("mousedown", ".ripple-wrapper", function (e, $ripple) {
             // Start ripple only on left or middle mouse click
             if (e.which === 1 || e.which === 2) {
                 rippleStart(e, $ripple);
             }
         });
         // if animation ends and user is not holding mouse then destroy the ripple
-        bind("rippleEnd", ".ripple-wrapper .ripple", function(e, $ripple) {
+        bind("rippleEnd", ".ripple-wrapper .ripple", function (e, $ripple) {
 
             var $ripples = $ripple.parentNode.getElementsByClassName("ripple");
 
@@ -127,7 +127,7 @@ window.ripples = {
             }
         });
         // Destroy ripple when mouse is not holded anymore if the ripple still exists
-        bind("mouseup", ".ripple-wrapper", function() {
+        bind("mouseup", ".ripple-wrapper", function () {
             var $ripple = $ripplecache;
             if ($ripple.dataset.animating != 1) {
                 rippleOut($ripple);
@@ -136,3 +136,4 @@ window.ripples = {
 
     }
 };
+module.exports = ripples;
