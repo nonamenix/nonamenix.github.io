@@ -1,6 +1,8 @@
 var jQuery = require("jquery");
 var bootstrap = require("bootstrap");
 
+require("../../styles/style.scss");
+
 $(function ($) {
     var margin = '0 -19px';
     $(".content p:has(>img)")
