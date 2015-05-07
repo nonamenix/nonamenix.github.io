@@ -107,7 +107,7 @@ JB :
     google : 
         tracking_id : 'UA-9306801-8'
     getclicky :
-      site_id : 
+        site_id :
     mixpanel :
         token : '_MIXPANEL_TOKEN_'
     piwik :
