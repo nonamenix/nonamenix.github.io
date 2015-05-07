@@ -1,5 +1,9 @@
+---
+title: Page not found
+---
 <html>
 <title>Page not found</title>
+
 <style>
     body, html {
         padding: 0;
@@ -27,7 +31,8 @@
         padding: 10px 10px 10px 40px;
     }
 </style>
-<body>
+<body onload="yaCounter30128444.reachGoal('error_404'); return true;">
+{% include metrika %}
 <div class="navigation">
     <p>
         Page not found! GOTO:
@@ -44,9 +49,11 @@
 </div>
 
 <script src="/bundle/main.js"></script>
+
 <script>
     var iframe = document.getElementById("hackertyper");
     iframe.contentWindow.focus();
+
 </script>
 
 </body>
