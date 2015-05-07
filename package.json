@@ -1,0 +1,36 @@
+{
+  "name": "nonamenix.github.io",
+  "version": "1.0.0",
+  "description": "Frontend sources",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "bootstrap-material": "^0.1.5",
+    "extract-text-webpack-plugin": "^0.7.0",
+    "css-loader": "^0.12.0",
+    "file-loader": "^0.8.1",
+    "gulp-webpack": "^1.4.0",
+    "jquery": "^2.1.4",
+    "node-sass": "^2.1.1",
+    "gulp": "^3.8.11",
+    "sass-loader": "^0.6.0",
+    "style-loader": "^0.12.1",
+    "source-map-loader": "^0.1.5",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.8.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nonamenix/nonamenix.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nonamenix/nonamenix.github.io/issues"
+  },
+  "homepage": "https://github.com/nonamenix/nonamenix.github.io"
+}
