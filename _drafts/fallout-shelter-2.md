@@ -1,0 +1,2 @@
+
+Вольный перевод: ['Fallout Shelter' Guide – Strategies, Tips and Tricks for the Industrious Post-Apocalypse Vault Overseer](http://toucharcade.com/2015/06/18/fallout-shelter-guide-tips-tricks-cheats/)
