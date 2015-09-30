@@ -72,6 +72,19 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar-collapse {
+    padding: 0;
+  }
+
+  .navbar-collapse .nav.navbar-nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+  }
+}
+
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
