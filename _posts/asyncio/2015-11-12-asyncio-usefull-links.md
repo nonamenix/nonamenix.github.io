@@ -19,7 +19,7 @@ asyncio
 aiohttp
 -------
 
-Презентация Андрея Светлова ([http://asvetlov.blogspot.ru/](http://asvetlov.blogspot.ru/) ) на pycon.ru
+Презентация Андрея Светлова ([http://asvetlov.blogspot.ru/](http://asvetlov.blogspot.ru/) §) на pycon.ru
 
 <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2jzseXM4vw8" frameborder="0" allowfullscreen></iframe>
