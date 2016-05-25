@@ -10,7 +10,7 @@ title: Frontend Developer Interview Topics
 ### HTML
 
 
-- [http://thatjsdude.com/interview/html.html](http://thatjsdude.com/interview/html.html)
+Полезные вопросы: [http://thatjsdude.com/interview/html.html](http://thatjsdude.com/interview/html.html)
 
 
 #### Что такое doctype? 
