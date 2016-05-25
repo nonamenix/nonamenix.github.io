@@ -22,8 +22,8 @@ group: navigation
 </h2>
     {% assign posts = site.categories["Projects"] %}
     <div class="row">
-        {% for post in posts limit: 4 %}
-        <div class="col-xs-12 col-sm-6 col-md-3">
+        {% for post in posts limit: 3 %}
+        <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">{{post.title}}</div>
                 <div class="panel-body no-padding">
