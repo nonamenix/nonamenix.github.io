@@ -225,7 +225,9 @@ document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     //put your script here
   }
-}```
+}
+```
+    
     
 #### Событийная модель DOM'а (Event bubble)
 
