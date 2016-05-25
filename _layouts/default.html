@@ -62,6 +62,7 @@ theme :
                     {% assign group = 'navigation' %}
                     {% include JB/pages_list %}
                     {% assign url = page.url | remove: '/blog/' %}{% if url != page.url %}{% assign notes_active = 'active' %}{% else %}{% assign notes_active = '' %}{% endif %}
+                    <li class="{{notes_active}}"><a class="{{notes_active}}" href="/projects.html">Портфолио</a></li>
                     <li class="{{notes_active}}"><a class="{{notes_active}}" href="{{ site.blog_url }}">Блокнот</a></li>
                 </ul>
             </div>
