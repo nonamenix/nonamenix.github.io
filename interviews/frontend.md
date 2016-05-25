@@ -132,6 +132,45 @@ div - блочный элемент, span - инлайновый.
 последовательную иерархию страницы.
 
 
+### JavaScript 
+
+JavaScript — прототипно-ориентированный сценарный язык программирования.
+
+#### null vs undefined
+
+`undefined` обозначает что значение не определено. В JavaScript есть глобальная переменная `undefined` значение, которой 
+  "undefined" и `type undefined` тоже "undefined".
+  
+Способы получить `undefined`:
+- объявить переменную без присвоения значения;
+- неявный return;
+- обращение к несуществующему свойству объекта;
+- аргумент, который не был передан в функцию;
+- присвоить;
+- значение глобальной переменной `undefined`.
+  
+`null` примитивное значение, которое обозначает пустую или несуществующую переменную. 
+
+#### == vs ===
+
+`==` — проверка на равенство значений.
+
+`===` - проверка на равенство значений и типов.
+
+
+#### Что дает прототипирование? 
+
+Легкий monkey patching, что в свою очередь может давать, например, расширение объектов ядра.  
+
+```javascript
+Date.prototype.nextDay = function(){
+  var currentDate = this.getDate();
+  return new Date(this.setDate(currentDate +1));
+}
+```
+
+Next questions: [http://thatjsdude.com/interview/js2.html](http://thatjsdude.com/interview/js2.html)
+
 ### JS API 
 
 #### windows vs document
@@ -178,6 +217,7 @@ document.addEventListener('DOMContentLoaded', function(){
 ```
 
 __Вариант №3__
+
 ```javascript
 document.onreadystatechange = function () {  
   if (document.readyState == "complete") {
@@ -198,13 +238,13 @@ document.onreadystatechange = function () {
 
 ![defer vs async](http://thatjsdude.com/images/asyncVsDefer.jpg)
 
-### Tooling topics
+### Another Important Topics
 
-* webpack 
-* npm (optimizations) 
-* tests 
-* linters
-
-### Layout 
+* Webpack 
+* NPM (optimizations) 
+* Tests 
+* Linters
+* Babel (ES6) 
 * Graceful Degradation and Progressive Enhancement
+* 
 
