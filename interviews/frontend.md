@@ -3,11 +3,9 @@ layout: page
 title: Frontend Developer Interview Topics
 ---
 
-### Общие вопросы
-
-- Как вы проверяете что поддерживают те или иные браузеры 
 
 ### HTML
+
 
 - [http://thatjsdude.com/interview/html.html](http://thatjsdude.com/interview/html.html)
 
@@ -25,6 +23,10 @@ title: Frontend Developer Interview Topics
 ```html
 <p><bdo dir="rtl">This text will go right to left.</bdo></p>
 ```
+
+#### Как вы проверяете что поддерживают те или иные браузеры?
+
+Например: [caniuse](http://caniuse.com)
 
 #### http request
 
