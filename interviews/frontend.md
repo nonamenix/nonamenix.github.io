@@ -95,32 +95,32 @@ div - блочный элемент, span - инлайновый.
                 <p>Pixel-based (canvas is essentially an image element with
                 a drawing API)</p>
             </td>
-            <td>Object Model-based (SVG elements are similar to HTML
-            elements)</td>
+            <td><p>Object Model-based (SVG elements are similar to HTML
+            elements)</p></td>
         </tr>
         <tr>
-            <td>Single HTML element similar to &lt;img&gt; in behavior</td>
-            <td>Multiple graphical elements which become part of the
-            Document Object Model (DOM)</td>
+            <td><p>Single HTML element similar to &lt;img&gt; in behavior</p></td>
+            <td><p>Multiple graphical elements which become part of the
+            Document Object Model (DOM)</p></td>
         </tr>
         <tr>
-            <td>Visual presentation created and modified programmatically
-            through script</td>
-            <td>Visual presentation created with markup and modified by CSS
-            or programmatically through script</td>
+            <td><p>Visual presentation created and modified programmatically
+            through script</p></td>
+            <td><p>Visual presentation created with markup and modified by CSS
+            or programmatically through script</p></td>
         </tr>
         <tr>
-            <td>Event model/user interaction is coarse—at the canvas
+            <td><p>Event model/user interaction is coarse—at the canvas
             element only; interactions must be manually programmed from
-            mouse coordinates</td>
-            <td>Event model/user interaction is object-based at the level
-            of primitive graphic elements—lines, rectangles, paths</td>
+            mouse coordinates</p></td>
+            <td><p>Event model/user interaction is object-based at the level
+            of primitive graphic elements—lines, rectangles, paths</p></td>
         </tr>
         <tr>
-            <td>API does not support accessibility; markup-based techniques
-            must be used in addition to canvas</td>
-            <td>SVG markup and object model directly supports
-            accessibility</td>
+            <td><p>API does not support accessibility; markup-based techniques
+            must be used in addition to canvas</p></td>
+            <td><p>SVG markup and object model directly supports
+            accessibility</p></td>
         </tr>
     </tbody>
 </table>
@@ -134,7 +134,24 @@ div - блочный элемент, span - инлайновый.
 
 ### JS API 
 
+#### windows vs document
 
+window — глобальный объект, содержащий: глобальные переменные, глобальные функции, location, история и т.п.
+
+document — представляет DOM, объектно ориентированное представление html. Логично, что функции getElementById и 
+addEventListener относятся к document, а не к window.
+
+```javascript
+window.document === document; //true
+window.getElementById; //undefined
+document.getElementById; //function getElementById() { [native code] }
+```
+
+#### window.onload vs document.onload
+
+`window.onload` вызывается когда DOM готов, а также весь контент включая изображения, css, скрипты, sub-frames и т.д. загружен. 
+
+`document.onload` вызывается DOM построен. 
 
 
 ### Document Rendering
