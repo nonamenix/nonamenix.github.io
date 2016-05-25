@@ -188,12 +188,22 @@ document.onreadystatechange = function () {
 #### Событийная модель DOM'а (Event bubble)
 
 Вопрос: Что такое событийная модель? Как распрространяются события? 
-
-
+  
 #### Document Rendering
 
 * CSSOM — CSS Object Model
 * DOM — Document Object Model
+
+#### defer vs async 
+
+![defer vs async](http://thatjsdude.com/images/asyncVsDefer.jpg)
+
+### Tooling topics
+
+* webpack 
+* npm (optimizations) 
+* tests 
+* linters
 
 ### Layout 
 * Graceful Degradation and Progressive Enhancement
