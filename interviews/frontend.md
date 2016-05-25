@@ -185,8 +185,12 @@ document.onreadystatechange = function () {
   }
 }```
     
+#### Событийная модель DOM'а (Event bubble)
 
-### Document Rendering
+Вопрос: Что такое событийная модель? Как распрространяются события? 
+
+
+#### Document Rendering
 
 * CSSOM — CSS Object Model
 * DOM — Document Object Model
