@@ -153,6 +153,38 @@ document.getElementById; //function getElementById() { [native code] }
 
 `document.onload` вызывается DOM построен. 
 
+#### DOM Query 
+
+- `getElementById`
+- `getElementsByClassName` 
+- `getElementsByTagName`
+- `querySelector` 
+- `querySelectorAll`
+
+#### DOM ready 
+
+Vanilla version `$(document).ready`?
+
+__Вариант №1__ 
+
+Положить скрипт в конец `body`
+
+__Вариант №2__
+
+```javascript
+document.addEventListener('DOMContentLoaded', function(){   
+   //put your script here
+});
+```
+
+__Вариант №3__
+```javascript
+document.onreadystatechange = function () {  
+  if (document.readyState == "complete") {
+    //put your script here
+  }
+}```
+    
 
 ### Document Rendering
 
