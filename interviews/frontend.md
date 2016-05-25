@@ -78,7 +78,7 @@ div - блочный элемент, span - инлайновый.
 
 #### В чем разница между svg и canvas
 
-<table class="tables">
+<table class="table">
     <thead>
         <tr>
             <td>
