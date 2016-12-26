@@ -12,7 +12,7 @@ Polar Lows - Сайт база данных полярных циклонов в
 
 <!--more-->
 
-<img src="/assets/images/portfolio/polar_lows.png "Polar lows!" "Скриншот интерфейса для отображения полярных циклонов"" class="img-responsive">
+<img src="/assets/images/portfolio/polar_lows.png" title="Polar lows!" alt="Скриншот интерфейса для отображения полярных циклонов" class="img-responsive">
 
 
 ## Описание
